@@ -1,6 +1,6 @@
-# RP04 - Services d'infrastructure Linux (DHCP & Web)
+# Application Professionnelle (AP04) - Services d'infrastructure Linux (DHCP et Web)
 
-> 🌐 **Aperçu Visuel :** Retrouvez une présentation illustrée de ce projet sur mon portfolio : [edib16.github.io/Portfolio/#RP04](https://edib16.github.io/Portfolio/#RP04)
+> 🌐 **Aperçu Visuel :** Retrouvez une présentation illustrée de ce projet sur mon portfolio : [edib16.github.io/Portfolio/#AP04](https://edib16.github.io/Portfolio/#AP04)
 
 > **Auteur :** Edib Saoud
 > **Date :** 02/2025 - 03/2025
@@ -30,25 +30,25 @@ L'objectif (SISR) était de concevoir et déployer un serveur Linux unique hébe
 | | **Répondre aux incidents et demandes d'assistance** | Mise en place de journaux d'erreurs (logs DHCP/Apache) pour le diagnostic. |
 | **Bloc 3 : Cybersécurité des services informatiques** | **Protéger l'infrastructure de l'organisation** | Isoler et sécuriser les baux DHCP par des réservations d'adresses MAC pour les postes critiques. |
 
-## 4. Planning de Réalisation (Diagramme de Gantt)
+## 4. Planning de Realisation (Gantt)
 
 Le projet s'est déroulé en totale autonomie sur un cycle de 3 semaines (Cycle en V) :
 
 ```mermaid
 gantt
-    title Déploiement Services Linux (DHCP & Web)
+    title Deploiement Services Linux (DHCP et Web)
     dateFormat  YYYY-MM-DD
     axisFormat  S%W
     
-    section Cadrage & Réseau
-    Analyse de l'existant & Risques :done,   des1, 2025-02-12, 5d
+    section Cadrage et Reseau
+    Analyse de l'existant et Risques :done,   des1, 2025-02-12, 5d
     Installation Debian Server      :done,   des2, 2025-02-17, 2d
     
     section Services
-    Déploiement Kea DHCP & Plages   :active, des3, 2025-02-19, 3d
-    Déploiement Serveur Web Apache2 :        des4, 2025-02-22, 3d
+    Deploiement Kea DHCP et Plages   :active, des3, 2025-02-19, 3d
+    Deploiement Serveur Web Apache2 :        des4, 2025-02-22, 3d
     
     section Validation
-    Tests intégration & baux IP     :        des5, 2025-02-25, 4d
-    Validation Intranet & Doc       :        des6, 2025-03-01, 3d
+    Tests integration et baux IP     :        des5, 2025-02-25, 4d
+    Validation Intranet et Doc       :        des6, 2025-03-01, 3d
 ```
