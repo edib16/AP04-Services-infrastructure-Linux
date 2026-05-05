@@ -30,25 +30,11 @@ L'objectif (SISR) était de concevoir et déployer un serveur Linux unique hébe
 | | **Répondre aux incidents et demandes d'assistance** | Mise en place de journaux d'erreurs (logs DHCP/Apache) pour le diagnostic. |
 | **Bloc 3 : Cybersécurité des services informatiques** | **Protéger l'infrastructure de l'organisation** | Isoler et sécuriser les baux DHCP par des réservations d'adresses MAC pour les postes critiques. |
 
-## 4. Planning de Realisation (Gantt)
+## 4. Structure de Realisation
 
-Le projet s'est déroulé en totale autonomie sur un cycle de 3 semaines (Cycle en V) :
+- [x] **Analyse :** Recensement des besoins en adressage dynamique et service intranet.
+- [x] **Fondation :** Deploiement du serveur Debian et durcissement de l'OS.
+- [x] **Service DHCP :** Configuration de Kea DHCP, definition des baux et des reservations.
+- [x] **Service Web :** Installation d'Apache2 et deploiement du portail Intranet.
+- [x] **Audit :** Tests de recette, verification de l'adressage et validation des acces web.
 
-```mermaid
-gantt
-    title Deploiement Services Linux (DHCP et Web)
-    dateFormat  YYYY-MM-DD
-    axisFormat  S%W
-    
-    section Cadrage et Reseau
-    Analyse de l'existant et Risques :done,   des1, 2025-02-12, 5d
-    Installation Debian Server      :done,   des2, 2025-02-17, 2d
-    
-    section Services
-    Deploiement Kea DHCP et Plages   :active, des3, 2025-02-19, 3d
-    Deploiement Serveur Web Apache2 :        des4, 2025-02-22, 3d
-    
-    section Validation
-    Tests integration et baux IP     :        des5, 2025-02-25, 4d
-    Validation Intranet et Doc       :        des6, 2025-03-01, 3d
-```
